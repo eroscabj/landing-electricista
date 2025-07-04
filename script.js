@@ -1,0 +1,1 @@
+// Por ahora no es necesario JS, pero este archivo está listo para futuras mejoras. 
