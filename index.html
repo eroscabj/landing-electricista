@@ -7,17 +7,22 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-black text-white font-sans">
-  <header class="text-black py-8 sm:py-10 text-center shadow" style="background-color: #ffd500;">
-    <h1 class="text-3xl sm:text-4xl font-bold mb-2 tracking-wide">Tundo Electricista</h1>
-    <p class="text-base sm:text-lg">Servicios eléctricos profesionales para hogares y empresas</p>
+  <header class="text-black py-8 sm:py-10 shadow" style="background-color: #ffd500;">
+    <div class="max-w-xl mx-auto flex flex-col sm:flex-row items-center sm:items-center gap-4 px-4">
+      <img src="logo.png" alt="Logo Tundo Electricista" class="h-20 w-20 sm:h-24 sm:w-24 object-cover bg-transparent flex-shrink-0 mr-0 sm:mr-6" style="background: none; border: none;" />
+      <div class="flex flex-col items-center sm:items-start w-full min-w-0">
+        <h1 class="text-3xl sm:text-4xl font-bold mb-1 sm:mb-2 tracking-wide whitespace-nowrap sm:whitespace-normal text-center sm:text-left overflow-hidden text-ellipsis">Tundo Electricista</h1>
+        <p class="text-base sm:text-lg text-center sm:text-left">Servicios eléctricos profesionales para hogares y empresas</p>
+      </div>
+    </div>
   </header>
   <main class="max-w-xl w-full mx-auto mt-6 sm:mt-8 px-2 sm:px-4">
     <section class="mb-6 sm:mb-8 bg-white rounded-xl shadow p-4 sm:p-6">
-      <h2 class="text-xl sm:text-2xl font-semibold text-blue-900 mb-2">Quienes somos</h2>
+      <h2 class="text-xl sm:text-2xl font-semibold text-blue-900 mb-2 text-center">Quienes somos</h2>
       <p class="text-gray-700 text-sm sm:text-base">Somos Electricistas con más de 40 años de experiencia, brindando soluciones seguras y eficientes.</p>
     </section>
     <section class="mb-6 sm:mb-8 bg-white rounded-xl shadow p-4 sm:p-6">
-      <h2 class="text-xl sm:text-2xl font-semibold text-blue-900 mb-2">Servicios</h2>
+      <h2 class="text-xl sm:text-2xl font-semibold text-blue-900 mb-2 text-center">Servicios</h2>
       <ul class="space-y-4 sm:space-y-6">
         <li>
           <span class="font-semibold text-gray-800">🔌 Instalaciones eléctricas</span>
@@ -43,34 +48,31 @@
     </section>
   </main>
   <section class="max-w-xl w-full mx-auto mt-4 mb-8 px-2 sm:px-4">
-    <form action="https://formspree.io/f/mayvlqzv" method="POST" class="bg-white rounded-xl shadow p-4 sm:p-6 flex flex-col space-y-4">
-      <h2 class="text-xl sm:text-2xl font-semibold text-blue-900 mb-2">Contacto</h2>
+    <form action="https://formspree.io/f/xwpbjear" method="POST" class="bg-white rounded-xl shadow p-4 sm:p-6 flex flex-col space-y-4">
+      <h2 class="text-xl sm:text-2xl font-semibold text-blue-900 mb-2 text-center">Contacto</h2>
       <div>
         <label for="nombre" class="block text-gray-700 font-medium mb-1">Nombre *</label>
-        <input type="text" id="nombre" name="nombre" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Tu nombre">
+        <input type="text" id="nombre" name="nombre" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 text-black" placeholder="Tu nombre">
       </div>
       <div>
         <label for="email" class="block text-gray-700 font-medium mb-1">Email *</label>
-        <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="tucorreo@email.com">
+        <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 text-black" placeholder="tucorreo@email.com">
       </div>
       <div>
         <label for="telefono" class="block text-gray-700 font-medium mb-1">Teléfono (opcional)</label>
-        <input type="tel" id="telefono" name="telefono" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Ej: 11 2345-6789">
+        <input type="tel" id="telefono" name="telefono" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 text-black" placeholder="Ej: 11 2345-6789">
       </div>
       <div>
         <label for="mensaje" class="block text-gray-700 font-medium mb-1">Mensaje *</label>
-        <textarea id="mensaje" name="mensaje" required rows="4" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Escribí tu consulta..."></textarea>
+        <textarea id="mensaje" name="mensaje" required rows="4" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 text-black" placeholder="Escribí tu consulta..."></textarea>
       </div>
       <button type="submit" class="bg-blue-900 text-white font-semibold rounded px-6 py-2 hover:bg-blue-800 transition">Enviar</button>
-      <p class="text-xs text-gray-500 mt-2">Al enviar el formulario, recibirás una confirmación en pantalla y el mensaje llegará a erostundoo@gmail.com</p>
+      <p class="text-xs text-gray-500 mt-2">Al enviar el formulario, recibirás una confirmación en pantalla y el mensaje llegará a tu email.</p>
     </form>
   </section>
-  <a href="https://wa.me/5491154108256" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-green-500 hover:bg-green-600 rounded-full shadow-lg w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center z-50 transition duration-200 focus:outline-none focus:ring-0 active:outline-none active:ring-0" target="_blank" title="Contactar por WhatsApp">
-    <svg viewBox="0 0 32 32" class="w-7 h-7 sm:w-8 sm:h-8" xmlns="http://www.w3.org/2000/svg">
-      <g>
-        <circle cx="16" cy="16" r="16" fill="#25D366"/>
-        <path d="M22.1 17.6c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.6.9-.8 1.1-.1.2-.3.2-.6.1-.3-.1-1.1-.4-2-1.2-.7-.6-1.2-1.4-1.4-1.6-.1-.2-.01-.4.1-.5.1-.1.2-.3.3-.4.1-.1.1-.2.2-.4.1-.2.1-.3 0-.5-.1-.1-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4-.2 0-.3 0-.5 0-.2 0-.4.1-.7.3-.2.2-.9.8-.9 2.1 0 1.2.9 2.4 1.1 2.6.1.2 1.9 2.8 4.4 3.8.6.2 1.1.4 1.5.5.6.1 1.2.1 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.1-1.2-.1-.1-.2-.2-.5-.3z" fill="#fff"/>
-      </g>
+  <a href="https://wa.me/5491154108256" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-[#25D366] hover:bg-green-600 rounded-full shadow-lg w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center z-50 transition duration-200 focus:outline-none focus:ring-0 active:outline-none active:ring-0" target="_blank" title="Contactar por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" class="w-7 h-7 sm:w-8 sm:h-8" fill="white">
+      <path d="M19.11 17.47c-.26-.13-1.53-.76-1.77-.85-.24-.09-.41-.13-.58.13-.17.26-.67.85-.82 1.02-.15.17-.3.19-.55.07-.26-.13-1.09-.4-2.08-1.28-.77-.68-1.29-1.52-1.44-1.78-.15-.26-.02-.39.11-.52.12-.12.26-.31.39-.47.13-.16.17-.28.26-.47.09-.19.05-.35-.02-.48-.07-.13-.6-1.44-.82-1.97-.22-.53-.44-.46-.6-.47-.16-.01-.34-.01-.53-.01-.19 0-.47.07-.71.35-.24.28-.93.91-.93 2.22 0 1.31 1 2.58 1.14 2.76.14.18 1.97 3.01 4.77 4.1.67.29 1.19.46 1.6.59.67.21 1.28.18 1.76.11.54-.08 1.65-.68 1.89-1.33.25-.65.25-1.2.17-1.32-.07-.12-.25-.18-.52-.31z"/>
     </svg>
   </a>
   <script src="script.js"></script>
