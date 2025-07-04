@@ -7,31 +7,66 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-50 text-gray-900 font-sans">
-  <header class="bg-blue-900 text-white py-10 text-center shadow">
-    <h1 class="text-4xl font-bold mb-2 tracking-wide">Tundo Electricista</h1>
-    <p class="text-lg">Servicios eléctricos profesionales para hogares y empresas</p>
+  <header class="bg-blue-900 text-white py-8 sm:py-10 text-center shadow">
+    <h1 class="text-3xl sm:text-4xl font-bold mb-2 tracking-wide">Tundo Electricista</h1>
+    <p class="text-base sm:text-lg">Servicios eléctricos profesionales para hogares y empresas</p>
   </header>
-  <main class="max-w-xl mx-auto mt-8 px-4">
-    <section class="mb-8 bg-white rounded-xl shadow p-6">
-      <h2 class="text-2xl font-semibold text-blue-900 mb-2">Sobre mí</h2>
-      <p class="text-gray-700">Soy electricista matriculado con más de 10 años de experiencia, brindando soluciones seguras y eficientes.</p>
+  <main class="max-w-xl w-full mx-auto mt-6 sm:mt-8 px-2 sm:px-4">
+    <section class="mb-6 sm:mb-8 bg-white rounded-xl shadow p-4 sm:p-6">
+      <h2 class="text-xl sm:text-2xl font-semibold text-blue-900 mb-2">Quienes somos</h2>
+      <p class="text-gray-700 text-sm sm:text-base">Somos Electricistas con más de 40 años de experiencia, brindando soluciones seguras y eficientes.</p>
     </section>
-    <section class="mb-8 bg-white rounded-xl shadow p-6">
-      <h2 class="text-2xl font-semibold text-blue-900 mb-2">Servicios</h2>
-      <ul class="list-disc list-inside text-gray-700 space-y-2">
-        <li>Instalaciones eléctricas</li>
-        <li>Reparaciones y mantenimiento</li>
-        <li>Tableros y disyuntores</li>
-        <li>Iluminación LED</li>
-        <li>Urgencias 24hs</li>
+    <section class="mb-6 sm:mb-8 bg-white rounded-xl shadow p-4 sm:p-6">
+      <h2 class="text-xl sm:text-2xl font-semibold text-blue-900 mb-2">Servicios</h2>
+      <ul class="space-y-4 sm:space-y-6">
+        <li>
+          <span class="font-semibold text-gray-800">Instalaciones eléctricas</span>
+          <p class="text-gray-700 text-xs sm:text-sm mt-1">Realización de instalaciones eléctricas completas en hogares, locales comerciales e industrias. Cableado, enchufes, tomas, llaves térmicas, puesta a tierra y más, cumpliendo con normas de seguridad.</p>
+        </li>
+        <li>
+          <span class="font-semibold text-gray-800">🛠 Reparaciones y mantenimiento</span>
+          <p class="text-gray-700 text-xs sm:text-sm mt-1">Detección y solución de fallas eléctricas. Cambio de tomas, interruptores, cableado dañado y mantenimiento preventivo para evitar cortocircuitos o sobrecargas.</p>
+        </li>
+        <li>
+          <span class="font-semibold text-gray-800">⚡ Tableros y disyuntores</span>
+          <p class="text-gray-700 text-xs sm:text-sm mt-1">Armado, reemplazo o ampliación de tableros eléctricos. Instalación de disyuntores, térmicas, contactores y protecciones para asegurar el correcto funcionamiento del sistema eléctrico.</p>
+        </li>
+        <li>
+          <span class="font-semibold text-gray-800">💡 Iluminación LED</span>
+          <p class="text-gray-700 text-xs sm:text-sm mt-1">Instalación de sistemas de iluminación LED para hogares, oficinas o exteriores. Ahorro energético, mejor estética y larga duración. Asesoramiento en distribución y tipo de luminaria.</p>
+        </li>
+        <li>
+          <span class="font-semibold text-gray-800">🚨 Urgencias 24hs</span>
+          <p class="text-gray-700 text-xs sm:text-sm mt-1">Atención inmediata ante cortes de luz, cortocircuitos o emergencias eléctricas. Servicio disponible las 24 horas, todos los días, con respuesta rápida y segura.</p>
+        </li>
       </ul>
     </section>
   </main>
-  <footer class="text-center py-4 bg-gray-200 text-gray-600 text-sm mt-8">
-    &copy; 2024 Tundo Electricista. Todos los derechos reservados.
-  </footer>
-  <a href="https://wa.me/5491123456789" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg w-14 h-14 flex items-center justify-center z-50 transition duration-200" target="_blank" title="Contactar por WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <section class="max-w-xl w-full mx-auto mt-4 mb-8 px-2 sm:px-4">
+    <form action="https://formspree.io/f/mayvlqzv" method="POST" class="bg-white rounded-xl shadow p-4 sm:p-6 flex flex-col space-y-4">
+      <h2 class="text-xl sm:text-2xl font-semibold text-blue-900 mb-2">Contacto</h2>
+      <div>
+        <label for="nombre" class="block text-gray-700 font-medium mb-1">Nombre *</label>
+        <input type="text" id="nombre" name="nombre" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Tu nombre">
+      </div>
+      <div>
+        <label for="email" class="block text-gray-700 font-medium mb-1">Email *</label>
+        <input type="email" id="email" name="email" required class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="tucorreo@email.com">
+      </div>
+      <div>
+        <label for="telefono" class="block text-gray-700 font-medium mb-1">Teléfono (opcional)</label>
+        <input type="tel" id="telefono" name="telefono" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Ej: 11 2345-6789">
+      </div>
+      <div>
+        <label for="mensaje" class="block text-gray-700 font-medium mb-1">Mensaje *</label>
+        <textarea id="mensaje" name="mensaje" required rows="4" class="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Escribí tu consulta..."></textarea>
+      </div>
+      <button type="submit" class="bg-blue-900 text-white font-semibold rounded px-6 py-2 hover:bg-blue-800 transition">Enviar</button>
+      <p class="text-xs text-gray-500 mt-2">Al enviar el formulario, recibirás una confirmación en pantalla y el mensaje llegará a erostundoo@gmail.com</p>
+    </form>
+  </section>
+  <a href="https://wa.me/5491154108256" class="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg w-12 h-12 sm:w-14 sm:h-14 flex items-center justify-center z-50 transition duration-200" target="_blank" title="Contactar por WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 sm:w-8 sm:h-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
       <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.031-.967-.273-.099-.472-.148-.67.15-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.372-.01-.571-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.099 3.2 5.077 4.363.71.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.288.173-1.413-.074-.124-.272-.198-.57-.347z"/>
     </svg>
   </a>
